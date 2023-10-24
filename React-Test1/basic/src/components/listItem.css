@@ -1,0 +1,65 @@
+.task{
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.task_actions{
+    /* border: red 5px solid; */
+    display: flex;
+    justify-content: center;
+}
+
+.task_radio, .task_radio_unchecked{
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    background-color: #000000;
+    border: 1px solid #000000;
+    cursor: pointer;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.task_text, .task_text_checked {
+    color: rgb(0, 0, 0);
+    flex: 1;
+    border-bottom: 1px solid #484040;
+    padding-bottom: 10px;
+    padding-left: 8px;
+}
+
+.task_btn{
+    cursor: pointer;
+    color: #000000;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.task_radio_unchecked{
+    background-color: transparent;
+}
+
+.task_text_checked{
+    text-decoration: line-through;
+    color: #0f90a1;
+}
+
+.transparent-input {
+    background: transparent;
+    border: none;
+    color: inherit; 
+    outline: none; 
+    color: rgb(0, 0, 0);
+    flex: 1;
+    border-bottom: 1px solid #484040;
+    /* padding-bottom: 10px; */
+    padding-left: 8px;
+    font-size: 16px;
+  }
