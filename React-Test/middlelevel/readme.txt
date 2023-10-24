@@ -1,0 +1,1 @@
+Please run npx json-server --watch db.json ./middleware.js in one terminal first and npm start in the other terminal for the react app. Enjoy!
