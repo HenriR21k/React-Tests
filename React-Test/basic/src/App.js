@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 const App = () => {
   const [task, setTask] = useState("");
-  const [searchQuery, setSearchQuery] = useState(""); // New state for the search query
+  const [searchQuery, setSearchQuery] = useState("");
   const [allTasks, setAllTasks] = useState([]);
   const [editTask, setEditTask] = useState(null);
 
@@ -61,7 +61,6 @@ const App = () => {
   };
 
   const searchTasks = () => {
-    // Filter tasks based on the searchQuery
     const filteredTasks = allTasks.filter((task) =>
       task.text.toLowerCase().includes(searchQuery.toLowerCase())
     );
@@ -70,7 +69,6 @@ const App = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    // Set the searchQuery state when the "Search" button is clicked
     setSearchQuery(task);
   };
 

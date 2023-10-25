@@ -3,7 +3,7 @@ import { AiOutlineCheck } from "react-icons/ai";
 import { ImBin, ImPencil, ImUpload } from "react-icons/im";
 import { useState } from "react";
 
-const ListItem = ({ task, deletetask, toggleChecked, edittaskText }) => {
+const ListItem = ({ task, deletetask, toggleChecked, editTaskText }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [newText, setNewText] = useState(task.text);
 
@@ -12,7 +12,7 @@ const ListItem = ({ task, deletetask, toggleChecked, edittaskText }) => {
   };
 
   const handleSave = () => {
-    edittaskText(newText);
+    editTaskText(newText);
     setIsEditing(false);
   };
 
