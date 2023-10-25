@@ -57,7 +57,8 @@ export const Contact = () => {
                   <input 
                   type="tel"
                   placeholder="+447400112233"
-                  style={{ opacity: 0.5 }}
+                  style={{ '::placeholder': { opacity: 0.5 } }}
+                  
                   {...register("tel", { required: true, pattern: /^(?:\+\d{1,3}[-\s]?)?\(?\d{3}\)?[-\s]?\d{3}[-\s]?\d{4}$/})}
                   />
                 {errors.tel && <p>Invalid tel</p>}
@@ -91,6 +92,8 @@ export const Contact = () => {
           </div>
         </Container>
       </section>
+
+      
     );
   }
 
